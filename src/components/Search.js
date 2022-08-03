@@ -49,7 +49,7 @@ function Search() {
   const getKin = async (searchText) => {
     const searchKin = await axios({
       method: "get",
-      url: `/v1/search/kin.json?query=${searchText}&display=20`,
+      url: `https://mjooon-proxy.herokuapp.com/https://openapi.naver.com/v1/search/kin.json?query=${searchText}&display=20`,
       dataType: "json",
       headers: {
         "X-Naver-Client-Id": NAVER_ID,
