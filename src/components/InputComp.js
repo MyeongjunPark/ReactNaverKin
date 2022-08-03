@@ -27,6 +27,9 @@ const SearchInput = styled.input`
   padding-bottom: 5px;
   box-sizing: border-box;
   background-color: white;
+  @media screen and (max-width: 400px) {
+    width: 250px;
+  }
 `;
 const SearchBtn = styled.div`
   width: 50px;
