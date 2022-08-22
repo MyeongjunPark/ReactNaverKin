@@ -37,9 +37,6 @@ function Search() {
   const NAVER_ID = process.env.REACT_APP_NAVER_ID;
   const NAVER_SECRET = process.env.REACT_APP_NAVER_SECRET;
 
-  // const NAVER_ID = "r6Rpfawa0h9D83pxtElt";
-  // const NAVER_SECRET = "ZUbpRlzVsR";
-
   const [searchData, setSearchData] = useState([]);
 
   const location = useLocation();
@@ -49,7 +46,7 @@ function Search() {
   const getKin = async (searchText) => {
     const searchKin = await axios({
       method: "get",
-      url: `https://mjooon-proxy.herokuapp.com/https://openapi.naver.com/v1/search/kin.json?query=${searchText}&display=20`,
+      url: `https://mjoon-proxy.herokuapp.com/https://openapi.naver.com/v1/search/kin.json?query=${searchText}&display=20`,
       dataType: "json",
       headers: {
         "X-Naver-Client-Id": NAVER_ID,
