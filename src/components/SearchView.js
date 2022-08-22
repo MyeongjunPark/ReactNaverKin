@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import Parser from "html-react-parser";
 
 const Wrap = styled.div`
